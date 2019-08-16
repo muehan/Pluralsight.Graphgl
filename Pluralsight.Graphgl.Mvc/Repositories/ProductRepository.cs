@@ -16,7 +16,17 @@ namespace Pluralsight.Graphgl.Mvc.Repositories
 
         public IEnumerable<Product> GetAll()
         {
-            return _dbContext.Products;
+            return _dbContext
+                .Products;
+        }
+
+        public Product GetOne(
+            int id)
+        {
+            return _dbContext
+                .Products
+                .Find(
+                    id);
         }
     }
 }

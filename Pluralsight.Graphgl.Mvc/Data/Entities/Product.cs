@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -26,5 +27,7 @@ namespace Pluralsight.Graphgl.Mvc.Data.Entities
 
         [StringLength(100)]
         public string PhotoFileName { get; set; }
+
+        public IEnumerable<ProductReview> ProductReviews { get; set; }
     }
 }

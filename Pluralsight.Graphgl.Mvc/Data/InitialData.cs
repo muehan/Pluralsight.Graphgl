@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Internal;
+﻿using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.Internal;
 using Pluralsight.Graphgl.Mvc.Data.Entities;
 
 namespace Pluralsight.Graphgl.Mvc.Data
@@ -18,6 +19,13 @@ namespace Pluralsight.Graphgl.Mvc.Data
                     Type = ProductType.Boots,
                     Stock = 54,
                     PhotoFileName = "some_shoes_1.jpg",
+                    ProductReviews = new List<ProductReview>
+                    {
+                        new ProductReview { Title = "Best Product ever", Review = "would buy it every time" },
+                        new ProductReview { Title = "Still walking", Review = "I can not stop walking" },
+                        new ProductReview { Title = "Are shoes", Review = "Look like shoes, feel like shoes, are definitely shoes." },
+                        new ProductReview { Title = "Bääää", Review = "Worst color ever" },
+                    }
                 });
 
                 dbContext.Products.Add(new Product
@@ -29,6 +37,13 @@ namespace Pluralsight.Graphgl.Mvc.Data
                     Type = ProductType.Boots,
                     Stock = 12,
                     PhotoFileName = "some_shoes_2.jpg",
+                    ProductReviews = new List<ProductReview>
+                    {
+                        new ProductReview { Title = "Best Product ever", Review = "would buy it every time" },
+                        new ProductReview { Title = "Still walking", Review = "I can not stop walking" },
+                        new ProductReview { Title = "Are shoes", Review = "Look like shoes, feel like shoes, are definitely shoes." },
+                        new ProductReview { Title = "Bääää", Review = "Worst color ever" },
+                    }
                 });
 
                 dbContext.Products.Add(new Product
@@ -40,6 +55,13 @@ namespace Pluralsight.Graphgl.Mvc.Data
                     Type = ProductType.Boots,
                     Stock = 7,
                     PhotoFileName = "some_shoes_3.jpg",
+                    ProductReviews = new List<ProductReview>
+                    {
+                        new ProductReview { Title = "Best Product ever", Review = "would buy it every time" },
+                        new ProductReview { Title = "Still walking", Review = "I can not stop walking" },
+                        new ProductReview { Title = "Are shoes", Review = "Look like shoes, feel like shoes, are definitely shoes." },
+                        new ProductReview { Title = "Bääää", Review = "Worst color ever" },
+                    }
                 });
 
                 dbContext.Products.Add(new Product
@@ -51,6 +73,13 @@ namespace Pluralsight.Graphgl.Mvc.Data
                     Type = ProductType.ClimbingGear,
                     Stock = 241,
                     PhotoFileName = "some_harness_1.jpg",
+                    ProductReviews = new List<ProductReview>
+                    {
+                        new ProductReview { Title = "Best Product ever", Review = "would buy it every time" },
+                        new ProductReview { Title = "Still walking", Review = "I can not stop walking" },
+                        new ProductReview { Title = "Are shoes", Review = "Look like shoes, feel like shoes, are definitely shoes." },
+                        new ProductReview { Title = "Bääää", Review = "Worst color ever" },
+                    }
                 });
 
                 dbContext.Products.Add(new Product
@@ -62,6 +91,13 @@ namespace Pluralsight.Graphgl.Mvc.Data
                     Type = ProductType.ClimbingGear,
                     Stock = 5,
                     PhotoFileName = "some_carbine_1.jpg",
+                    ProductReviews = new List<ProductReview>
+                    {
+                        new ProductReview { Title = "Best Product ever", Review = "would buy it every time" },
+                        new ProductReview { Title = "Still walking", Review = "I can not stop walking" },
+                        new ProductReview { Title = "Are shoes", Review = "Look like shoes, feel like shoes, are definitely shoes." },
+                        new ProductReview { Title = "Bääää", Review = "Worst color ever" },
+                    }
                 });
 
                 dbContext.Products.Add(new Product
@@ -73,6 +109,13 @@ namespace Pluralsight.Graphgl.Mvc.Data
                     Type = ProductType.ClimbingGear,
                     Stock = 7,
                     PhotoFileName = "some_rope_1.jpg",
+                    ProductReviews = new List<ProductReview>
+                    {
+                        new ProductReview { Title = "Best Product ever", Review = "would buy it every time" },
+                        new ProductReview { Title = "Still walking", Review = "I can not stop walking" },
+                        new ProductReview { Title = "Are shoes", Review = "Look like shoes, feel like shoes, are definitely shoes." },
+                        new ProductReview { Title = "Bääää", Review = "Worst color ever" },
+                    }
                 });
 
                 dbContext.Products.Add(new Product
@@ -84,6 +127,13 @@ namespace Pluralsight.Graphgl.Mvc.Data
                     Type = ProductType.Kayaks,
                     Stock = 0,
                     PhotoFileName = "some_ship_1.jpg",
+                    ProductReviews = new List<ProductReview>
+                    {
+                        new ProductReview { Title = "Best Product ever", Review = "would buy it every time" },
+                        new ProductReview { Title = "Still walking", Review = "I can not stop walking" },
+                        new ProductReview { Title = "Are shoes", Review = "Look like shoes, feel like shoes, are definitely shoes." },
+                        new ProductReview { Title = "Bääää", Review = "Worst color ever" },
+                    }
                 });
 
                 dbContext.SaveChanges();

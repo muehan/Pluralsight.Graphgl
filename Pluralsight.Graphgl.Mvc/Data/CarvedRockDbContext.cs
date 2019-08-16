@@ -15,5 +15,7 @@ namespace Pluralsight.Graphgl.Mvc.Data
 
         public DbSet<Product> Products { get; set; }
 
+        public DbSet<ProductReview> ProductReviews { get; set; }
+
     }
 }
